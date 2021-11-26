@@ -1,0 +1,17 @@
+int enb = sayilar[0];
+            for (int i = 0; i < sayilar.Length; i++)
+            {
+                if(enb < sayilar[i])
+                {
+                    enb = sayilar[i];
+                }
+            }
+
+            for (int i = 0; i < sayilar.Length; i++)
+            {
+                int k = i + 1;
+                if (enb == sayilar[i])
+                {
+                    listBox2.Items.Add(k + ". " + enb);
+                }
+            }
